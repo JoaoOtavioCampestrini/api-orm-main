@@ -14,4 +14,17 @@ export class User {
 
   @OneToMany(() => Account, (account) => account.user)
   accounts: Account[];
+
+  @Column()
+  documents: string;
+
+  @Column()
+  birth_date: string;
+
+  @Column()
+  phone_number: string;
+
+  @Column()
+  address: string;
+
 }
